@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/charles/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\devel\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/charles/Desktop/Projects/Technical Assignment /Technical Assignment.csproj",
+      "projectUniqueName": "C:\\Users\\devel\\OneDrive\\Desktop\\Technical-Assignment-development-branch\\Technical Assignment.csproj",
       "projectName": "Technical Assignment",
-      "projectPath": "/Users/charles/Desktop/Projects/Technical Assignment /Technical Assignment.csproj",
-      "packagesPath": "/Users/charles/.nuget/packages/",
-      "outputPath": "/Users/charles/Desktop/Projects/Technical Assignment /obj/",
+      "projectPath": "C:\\Users\\devel\\OneDrive\\Desktop\\Technical-Assignment-development-branch\\Technical Assignment.csproj",
+      "packagesPath": "C:\\Users\\devel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\devel\\OneDrive\\Desktop\\Technical-Assignment-development-branch\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/charles/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\devel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -714,6 +714,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {}
         }
       },
@@ -725,18 +726,26 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
