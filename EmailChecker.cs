@@ -5,12 +5,17 @@ namespace Technical_Assignment
 {
     public class EmailChecker
     {
+        //holds unchecked emails
         ArrayList emails = new ArrayList();
-        ArrayList vaildEmails = new ArrayList();
-        ArrayList invaildEmails = new ArrayList();
+        //holds valid and invalid emails respectively 
+        ArrayList validEmails = new ArrayList();
+        ArrayList invalidEmails = new ArrayList();
+
+        //class constructor takes an ArrayList of emails
         public EmailChecker(ArrayList emails)
         {
             this.emails = emails;
+            //Regex expression to test emails
             Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
 
             foreach (string email in emails)
@@ -19,16 +24,16 @@ namespace Technical_Assignment
                 Match match = regex.Match(email);
                 if (match.Success)
                 {
-                    vaildEmails.Add(email);
+                    validEmails.Add(email);
                 }
                 else
                 {
-                    invaildEmails.Add(email);
+                    invalidEmails.Add(email);
                 }
             }
         }
-
-        public ArrayList getVaildEmails() => vaildEmails;
-        public ArrayList getInvaildEmails() => invaildEmails;
+        //getters
+        public ArrayList getvalidEmails() => validEmails;
+        public ArrayList getInvalidEmails() => invalidEmails;
     }
 }

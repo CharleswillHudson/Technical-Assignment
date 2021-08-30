@@ -4,71 +4,83 @@ using System.IO;
 
 namespace Technical_Assignment
 {
+    //class made to test XmlParser and EmailChecker
     public class Tests
     {
-        ArrayList vaildTestList = new ArrayList();
-        ArrayList invaildTestList = new ArrayList();
+        //ArrayList to test email checker 
+        ArrayList validTestList = new ArrayList();
+        ArrayList invalidTestList = new ArrayList();
         public Tests()
         {
-            invaildTestList.Add("@.com");
-            invaildTestList.Add("not vaild@gmail.com");
+            //should be returned invalid by the EmailChecker
+            invalidTestList.Add("@.com");
+            invalidTestList.Add("not valid@gmail.com");
+            //should be returned valid by the EmailChecker
+            validTestList.Add("valid@gmail.com");
+            validTestList.Add("charles@aol.net");
 
-            vaildTestList.Add("vaild@gmail.com");
-            vaildTestList.Add("charles@aol.net");
-            EmailChecker checkedEmails = new EmailChecker(invaildTestList);
-            ArrayList invaildList = checkedEmails.getInvaildEmails();
-            EmailChecker checkedEmails2 = new EmailChecker(vaildTestList);
-            ArrayList vaildList = checkedEmails2.getVaildEmails();
+            //creates instance of EmailChecker with known invalid emails
+            EmailChecker checkedEmails = new EmailChecker(invalidTestList);
+            ArrayList invalidList = checkedEmails.getInvalidEmails();
+            //creates instance of EmailChecker with known valid emails
+            EmailChecker checkedEmails2 = new EmailChecker(validTestList);
+            ArrayList validList = checkedEmails2.getvalidEmails();
 
-
-            if (invaildTestList.Count == invaildList.Count)
+            //test to see if invalid emails returned as invalid.
+            if (invalidTestList.Count == invalidList.Count)
             {
-                for (int i = 0; i < invaildTestList.Count; i++)
+                for (int i = 0; i < invalidTestList.Count; i++)
                 {
-                    if (!invaildTestList[i].Equals(invaildList[i]))
+                    if (!invalidTestList[i].Equals(invalidList[i]))
                     {
-                        Console.WriteLine("Invaild Email Fail");
+                        Console.WriteLine("Invalid Email Fail");
                         break;
                     }
-                    if (i == invaildTestList.Count - 1)
+                    if (i == invalidTestList.Count - 1)
                     {
-                        Console.WriteLine("Invaild Email pass");
+                        Console.WriteLine("Invalid Email pass");
                     }
                 }
 
             }
             else
             {
-                Console.WriteLine("Invaild Email Fail");
+                Console.WriteLine("Invalid Email Fail");
             }
-            if (vaildTestList.Count == vaildList.Count)
+             //test to see if valid emails returned as valid.
+            if (validTestList.Count == validList.Count)
             {
-                for (int i = 0; i < vaildTestList.Count; i++)
+                for (int i = 0; i < validTestList.Count; i++)
                 {
-                    if (!vaildTestList[i].Equals(vaildList[i]))
+                    if (!validTestList[i].Equals(validList[i]))
                     {
-                        Console.WriteLine("Vaild Email Fail");
+                        Console.WriteLine("valid Email Fail");
                         break;
                     }
-                    if (i == vaildTestList.Count - 1)
+                    if (i == validTestList.Count - 1)
                     {
-                        Console.WriteLine("Vaild Email pass");
+                        Console.WriteLine("valid Email pass");
                     }
                 }
 
             }
             else
             {
-                Console.WriteLine("Vaild Email Fail");
+                Console.WriteLine("valid Email Fail");
             }
+
+            //creates new instance of XmlParser used for test
             try
             {
                 XmlParser xmlParser = new XmlParser("test.xml");
+                //creates an array of emails in test.xml to compare to the list XmlParser finds in the file
                 ArrayList emails = new ArrayList(){
                 "testPerson1@gmail.com","testPerson2@gmail.com","testPerson3gmail.com","testPerson4@gmailcom","test Person5@gmail.com","testPerson6@.com"
             };
 
                 ArrayList foundEmails = xmlParser.getEmail();
+
+                //confirms if known email list matches the emails returned by XmlParser
                 if (emails.Count == foundEmails.Count)
                 {
                     for (int i = 0; i < emails.Count; i++)

@@ -9,3 +9,16 @@
 /Users/charles/Desktop/Projects/Technical Assignment /obj/Debug/netcoreapp2.1/Technical Assignment.AssemblyInfo.cs
 /Users/charles/Desktop/Projects/Technical Assignment /obj/Debug/netcoreapp2.1/Technical Assignment.dll
 /Users/charles/Desktop/Projects/Technical Assignment /obj/Debug/netcoreapp2.1/Technical Assignment.pdb
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\bin\Debug\netcoreapp2.1\Technical Assignment.deps.json
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\bin\Debug\netcoreapp2.1\Technical Assignment.runtimeconfig.json
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\bin\Debug\netcoreapp2.1\Technical Assignment.runtimeconfig.dev.json
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\bin\Debug\netcoreapp2.1\Technical Assignment.dll
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\bin\Debug\netcoreapp2.1\Technical Assignment.pdb
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.csproj.AssemblyReference.cache
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.AssemblyInfoInputs.cache
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.AssemblyInfo.cs
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.csproj.CoreCompileInputs.cache
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.dll
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.pdb
+C:\Users\devel\OneDrive\Desktop\Technical-Assignment-development-branch\obj\Debug\netcoreapp2.1\Technical Assignment.genruntimeconfig.cache
