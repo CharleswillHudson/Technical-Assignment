@@ -7,7 +7,7 @@ namespace Technical_Assignment
 {
     class Program
     {
-        static void Main(string[] args)`
+        static void Main(string[] args)
         {
 
             //Tests test = new Tests();
@@ -16,44 +16,44 @@ namespace Technical_Assignment
 
 
 
-    }
+        }
 
-    private static void proptUser()
-    {
-        string userFile;
-        Console.WriteLine("Enter File Name");
-        userFile = Console.ReadLine();
-
-        try
+        private static void proptUser()
         {
-            XmlParser xmlParser = new XmlParser(userFile);
-            ArrayList emails = xmlParser.getEmail();
-            EmailChecker checkedEmails = new EmailChecker(emails);
-            Console.WriteLine("valid email list:");
-            ArrayList vemails = checkedEmails.getVaildEmails();
-            foreach (string vemail in vemails)
+            string userFile;
+            Console.WriteLine("Enter File Name");
+            userFile = Console.ReadLine();
+
+            try
             {
-                Console.WriteLine(vemail);
+                XmlParser xmlParser = new XmlParser(userFile);
+                ArrayList emails = xmlParser.getEmail();
+                EmailChecker checkedEmails = new EmailChecker(emails);
+                Console.WriteLine("valid email list:");
+                ArrayList vemails = checkedEmails.getVaildEmails();
+                foreach (string vemail in vemails)
+                {
+                    Console.WriteLine(vemail);
+                }
+                ArrayList iemails = checkedEmails.getInvaildEmails();
+                Console.WriteLine("invaild email list:");
+                foreach (string iemail in iemails)
+                {
+                    Console.WriteLine(iemail);
+                }
+
             }
-            ArrayList iemails = checkedEmails.getInvaildEmails();
-            Console.WriteLine("invaild email list:");
-            foreach (string iemail in iemails)
+
+            catch (FileNotFoundException)
             {
-                Console.WriteLine(iemail);
+                Console.WriteLine("file not found");
             }
-
-        }
-
-        catch (FileNotFoundException)
-        {
-            Console.WriteLine("file not found");
-        }
-        catch (Exception)
-        {
-            Console.WriteLine("Error");
+            catch (Exception)
+            {
+                Console.WriteLine("Error");
 
 
+            }
         }
     }
-}
 }
