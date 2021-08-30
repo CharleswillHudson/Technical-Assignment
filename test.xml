@@ -1,0 +1,33 @@
+<persons>
+    <person>
+        <firstName>Test </firstName>
+        <lastName>Person1</lastName>
+        <email>testPerson1@gmail.com</email>
+    </person>
+    <person>
+        <firstName>Test2 </firstName>
+        <lastName>Person2</lastName>
+        <email>testPerson2@gmail.com</email>
+    </person>
+        <person>
+        <firstName>Test3 </firstName>
+        <lastName>Person3</lastName>
+        <email>testPerson3gmail.com</email>
+    </person>
+    <person>
+        <firstName>Test4 </firstName>
+        <lastName>Person4</lastName>
+        <email>testPerson4@gmailcom</email>
+    </person>
+        <person>
+        <firstName>Test5</firstName>
+        <lastName>Person5</lastName>
+        <email>test Person5@gmail.com</email>
+    </person>
+    <person>
+        <firstName>Test6 </firstName>
+        <lastName>Person6</lastName>
+        <email>testPerson6@.com</email>
+    </person>
+</persons>
+
